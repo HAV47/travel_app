@@ -1,8 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travelapp/core/constans/dimention/dimention_constants.dart';
-import 'package:travelapp/core/helpers/asset_helper.dart';
-import 'package:travelapp/representation/widgets/item_booking_widget.dart';
 
 class ItemBookingWidget extends StatelessWidget {
   const ItemBookingWidget(

@@ -279,7 +279,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   SizedBox(
-                    height: kMediumPadding,
+                    width: kMediumPadding,
                   ),
                   Expanded(
                     child: Column(

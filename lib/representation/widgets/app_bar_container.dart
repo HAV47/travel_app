@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:travelapp/core/constans/dimention/color_palette.dart';
 import 'package:travelapp/core/constans/dimention/dimention_constants.dart';
+import 'package:travelapp/core/constans/text_style.dart';
 import 'package:travelapp/core/helpers/asset_helper.dart';
 import 'package:travelapp/core/helpers/image_helper.dart';
 
@@ -12,6 +13,7 @@ class AppBarContainer extends StatelessWidget {
     this.title,
     this.implementLeading = false,
     this.titleString,
+    this.subTitleString,
     this.implementTraling = false,
     this.paddingContent = const EdgeInsets.symmetric(
       horizontal: kMediumPadding,
@@ -21,6 +23,7 @@ class AppBarContainer extends StatelessWidget {
   final Widget child;
   final Widget? title;
   final String? titleString;
+  final String? subTitleString;
   final bool implementLeading;
   final bool implementTraling;
   final EdgeInsets? paddingContent;
@@ -48,7 +51,7 @@ class AppBarContainer extends StatelessWidget {
                                   Radius.circular(kMediumPadding)),
                               color: Colors.white),
                           padding: const EdgeInsets.all(kItemPadding),
-                          child: const Icon(
+                          child: Icon(
                             FontAwesomeIcons.arrowLeft,
                             color: Colors.black,
                             size: kDefaultPadding,
@@ -60,9 +63,19 @@ class AppBarContainer extends StatelessWidget {
                             children: [
                               Text(
                                 titleString ?? '',
-                                style: const TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 20),
-                              )
+                                style: TextStyles.defaultStyle.fontHeader
+                                    .whiteTextColor.bold,
+                              ),
+                              if (subTitleString != null)
+                                Padding(
+                                  padding: const EdgeInsets.only(
+                                      top: kMediumPadding),
+                                  child: Text(
+                                    subTitleString!,
+                                    style: TextStyles.defaultStyle.fontCaption
+                                        .whiteTextColor,
+                                  ),
+                                ),
                             ],
                           ),
                         ),
