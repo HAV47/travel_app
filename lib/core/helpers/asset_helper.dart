@@ -17,8 +17,14 @@ class AssetHelper{
   static const String iconIncrease = 'assets/icons/icon_increase.png';
   static const String iconRoom = 'assets/icons/icon_room.png';
   static const String iconLocation = 'assets/icons/icon_location.png';
+  static const String iconLocationHotel = 'assets/icons/icon_location_hotel.png';
+  static const String iconStarHotel = 'assets/icons/icon_star_hotel.png';
   static const String dubai = 'assets/images/dubai.png';
   static const String japan = 'assets/images/japan.png';
   static const String korea = 'assets/images/korea.png';
   static const String turkey = 'assets/images/turkey.png';
+  static const String royalPalmHeritage = 'assets/images/royal_palm_heritage.png';
+  static const String grandLuxury = 'assets/images/grand_luxury.png';
+  static const String theOrlandoHouse = 'assets/images/the_orlando_house.png';
+  static const String hotelDetails = 'assets/images/hotel_details.png';
 }
